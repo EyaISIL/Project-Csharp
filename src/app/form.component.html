@@ -1,0 +1,53 @@
+<head>
+
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<div class="main-block" id="form">
+
+  <form >
+    <h1>Formulaire produit</h1>
+    <div class="info">
+
+      <input class="computerID" type="number" name="computerID" [(ngModel)]="computerID"  placeholder="computer ID" id="computerID">
+      <input type="text" id="brand" name="brand" [(ngModel)]="brand" placeholder="brand">
+      <input type="number" name="Processor" placeholder="Processor" [(ngModel)]="Processor" id="Processor">
+      <input type="number" name="HardDisk" placeholder="HardDisk" [(ngModel)]="HardDisk" id="HardDisk">
+      <input type="number" name="MemoryRAM" placeholder="MemoryRAM" [(ngModel)]="MemoryRAM" id="MemoryRAM">
+      <input type="number" name="Size" placeholder="Size" [(ngModel)]="Size" id="Size">
+      <input type="number" name="Weight" placeholder="Weight" [(ngModel)]="Weight" id="Weight">
+      <input type="text" name="OS" [(ngModel)]="OS" id="OS">
+      <input type="number" name="Price" placeholder="Price" [(ngModel)]="Price" id="Price">
+      <input type="text" name="color" placeholder="color" [(ngModel)]="color" id="color">
+      <select name="produitP" id="produitP" [(ngModel)]="produitP" style="width:100%">
+
+      </select>
+
+
+
+
+
+
+
+    </div>
+
+    <button type="submit" href="/" [disabled]="!brand || !Price || !OS || !Processor" (click)="CreateRecord()" >Submit</button>
+  </form>
+</div>
+</body>

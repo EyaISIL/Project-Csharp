@@ -1,0 +1,39 @@
+<table style="width:100%">
+  <thead>
+
+  <tr>
+
+
+    <th colspan="4">computerID</th>
+    <th colspan="4">brand</th>
+    <th colspan="4">Processor</th>
+    <th colspan="4">HardDisk</th>
+    <th colspan="4">MemoryRAM</th>
+    <th colspan="4">Size</th>
+    <th colspan="4">Weight</th>
+    <th colspan="4">OS</th>
+    <th colspan="4">Price</th>
+    <th colspan="4">color</th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let produit of produits">
+    <td colspan="4">{{ produit.computerID }}</td>
+    <td colspan="4">{{ produit.brand }}</td>
+    <td colspan="4">{{ produit.Processor }}</td>
+    <td colspan="4">{{ produit.HardDisk }}</td>
+    <td colspan="4">{{ produit.MemoryRAM }}</td>
+    <td colspan="4">{{ produit.Size}}</td>
+    <td colspan="4">{{ produit.Weight }}</td>
+    <td colspan="4">{{ produit.OS }}</td>
+    <td colspan="4">{{ produit.Price }}</td>
+    <td colspan="4">{{ produit.color }}</td>
+
+  </tr>
+  
+  <button type="submit" href="/">Submit</button>
+
+  </tbody>
+</table>
